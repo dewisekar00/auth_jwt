@@ -1,0 +1,34 @@
+1.buat folder
+-controllers
+-middleware
+-models
+-routes
+
+
+2.mulai buat file 
+-sesuai namanya, cth auth.js(isinya login/register)
+-app.js root file
+-file env 
+
+
+3. 
+-buat controllersnya dulu
+-buat routesnya
+-kirim di app.js
+
+4.yang perlu didowload dalam project isinya
+-express
+-jsonwebtoken
+-env
+-install package bcrypt
+
+
+5.buat middleware sebelum menuju ke route tujuan
+
+6.menambahkan hashing untuk password di controllersnya
+caranya
+a.const saltRounds = 10; saltRound(untuk kasih berapa kali data diproses,semakin tinggi round makin aman hashnya, tapi semakin tinggi mempengaruhi kinerja hashing)
+b.const bcrypt = require('bcrypt'); dowload dulu bcrypt
+c.const hashPassword = bcrypt.hashSync(password, saltRounds);
+tinggal tambahkan hashPassword 
+
